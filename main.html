@@ -5,6 +5,12 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 	<style>
+		#box{
+			background-color: rgb(204, 204, 204);
+		}
+		h1, h2, h3{
+			text-align: center;
+		}
 		li{
 			list-style-type: none;
 		}
@@ -19,39 +25,29 @@
 	</style>
 </head>
 
-<body style="background-color: rgb(204, 204, 204)">
+<body id="box">
 	<!-- the entire body must be written by student -->
-	<h1 style="text-align: center">My Playlist</h1>
+	<h1 >My Playlist</h1>
 	<ul>
-		<li><a target="_blank">song1</a></li>
-		<li><a target="_blank">song2</a></li>
-		<li><a target="_blank">song3</a></li>
-		<li><a target="_blank">song4</a></li>
-		<li><a target="_blank">song5</a></li>
+		<li><a href="song1" target="_blank">song1</a></li>
+		<li><a href="song1" target="_blank">song2</a></li>
+		<li><a href="song1" target="_blank">song3</a></li>
+		<li><a href="song1" target="_blank">song4</a></li>
+		<li><a href="song1" target="_blank">song5</a></li>
 	</ul>
 		
-	<h2 style="text-align: center">Now Playing...</h2>
-	
+	<h2 >Now Playing...</h2>
 	<div class="player_one">
 	<video controls>
-		<source src="https://www.w3schools.com/tags/movie.mp4" type="video"/>
+		<source src="https://www.w3schools.com/tags/movie.mp4" />
 	</video>
 	</div>
 	
-	<h3 style="text-align: center">MP3 songs</h3>
-	
-	<div class="player_two">
-	<audio controls>
-		<source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio">
-	</audio>
-	</div>
-		
-
-
-
-	
-    <script type="text/javascript" src="./script.js"></script>
-
+	<h3>MP3 songs</h3>
+		<div class="player_two">
+	<audio src="https://www.pagalworld.com.se/files/download/id/64630" controls><!--source  type="audio"--></audio>
+	</div>	
+    
+	<script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
